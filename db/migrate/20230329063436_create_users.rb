@@ -3,10 +3,9 @@ class CreateUsers < ActiveRecord::Migration[7.0]
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.string :phone
-      t.integer :no
+      t.integer :phone
       t.string :location
-      t.string :password_digest
+      
 
       t.timestamps
     end

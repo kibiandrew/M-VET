@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 # Seeds for Users
-User.create(name: "John Doe", email: "johndoe@example.com", password: "password")
-User.create(name: "Jane Doe", email: "janedoe@example.com", password: "password")
+User.create(name: "John Doe", email: "johndoe@example.com", phone: 0776666, location: "Ntiwa") 
+User.create(name: "Jane Doe", email: "janedoe@example.com", phone: 45454565, location: "Kenya" )
 
 # Seeds for Pets
-Pet.create(name: "Fluffy", species: "cat", user_id: 1)
-Pet.create(name: "Fido", species: "dog", user_id: 1)
-Pet.create(name: "Buddy", species: "dog", user_id: 2)
-Pet.create(name: "Whiskers", species: "cat", user_id: 2)
+Pet.create(name: "Fluffy", age: 23, species: "cat", breed: "Aus" )
+Pet.create(name: "Fido", age: 12, species: "dog", breed: "Kenyan")
+Pet.create(name: "Buddy", age: 32, species: "dog", breed: "Italian")
+Pet.create(name: "Whiskers", age: 21, species: "cat", breed: "German")

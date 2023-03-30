@@ -31,6 +31,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_171324) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
   end
+  create_table "doctors", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.integer "phone"
+    t.string "appointments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+     
+  end
 
-  add_foreign_key "pets", "users"
+  add_foreign_key "pets", "users","doctors
+  "
 end

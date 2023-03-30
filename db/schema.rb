@@ -39,7 +39,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_171324) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-     
+    t.index ["doctors"], name: "index_pets_on_user_id"
   end
 
   add_foreign_key "pets", "users","doctors
